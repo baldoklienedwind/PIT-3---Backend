@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: pit3-backend
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn myproject.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: myproject.settings
+      - key: PYTHON_VERSION
+        value: 3.11
+    workingDir: backend
