@@ -55,6 +55,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://baldoklienedwind.github.io",
+]
 
 # You can also allow all origins during development (be cautious in production)
 # CORS_ALLOW_ALL_ORIGINS = True  # Uncomment this for testing locally
